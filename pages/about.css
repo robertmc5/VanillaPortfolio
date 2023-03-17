@@ -1,0 +1,243 @@
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-width: 20rem;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  background-color: #F2F2F2;
+  padding: 1rem;
+}
+
+/* Animation at-rules */
+@keyframes boopIn {
+  0% {
+    opacity: 0;
+  }
+  79% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  80% {
+    opacity: 1;
+  }
+  87% {
+    transform: scale(0.70);
+  }
+  95% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes arcLike {
+  0% {
+    left: 30%;
+    top: 60%;
+  }
+  25% {
+    left: 45%;
+    top: 45%;
+  }
+  50% {
+    left: 60%;
+    top: 30%;
+  }
+  62% {
+    left: 65%;
+    top: 24%;
+  }
+  75% {
+    left: 70%;
+    top: 18%;
+  }
+  88% {
+    left: 75%;
+    top: 20%;
+  }
+  100% {
+    left: 80%;
+    top: 22%;
+  }
+}
+
+@keyframes floatLeftRight {
+  0% {
+    right: 4%;
+  }
+  3% {
+    right: 4%;
+  }
+  47% {
+    right: 64%;
+  }
+  53% {
+    right: 64%;
+  }
+  97% {
+    right: 4%;
+  }
+  100% {
+    right: 4%;
+  }
+}
+
+/* Navigation Bar */
+nav {
+  padding: 0.5rem 0 2.5rem 0.5rem;
+  text-align: start;
+  font-size: 0;
+}
+
+a,
+button {
+  padding: 0.5rem;
+  border: 1px solid #000000;
+  margin-right: 1rem;
+  font-family: Optima, 'Century Gothic', sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: #000000;
+}
+
+nav > a:last-of-type,
+button {
+  margin-right: 0;
+}
+
+a:hover,
+button:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 50%);
+}
+
+a:active,
+button:active {
+  background-color: #FFFFFF;
+}
+
+/* About Me - Section */
+#about {
+  position: relative;
+}
+
+#about > .description::before {
+  background-color: #B0E0E680;
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+}
+
+#about > .description * {
+  position: relative;
+}
+
+h1,
+h2 {
+  font-family: 'Boogaloo', cursive;
+  text-transform: uppercase;
+  padding-block: 1rem;
+}
+
+p {
+  line-height: 1.25;
+}
+
+#about p {
+  padding: 0.5rem;
+}
+
+/* Skills - Section */
+
+
+/* Small devices */
+.desktop-polygon {
+  display: none;
+}
+
+/* Very small devices  ============  */
+@media only screen and (max-width: 23rem) {
+  a {
+    font-size: 0.8125rem;
+  }
+  nav {
+    padding: 0.5rem 0 2rem 0.5rem;
+  }
+}
+
+/* Large devices  =========================================================  */
+@media only screen and (min-width: 48rem) {
+  body {
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+  #about > .description::before {
+    content: none;
+  }
+  section {
+    display: flex;
+  }
+  #about > .description {
+    width: 50%;
+    background-color: #F2F2F2;
+  }
+  #about p {
+    padding: 0.5rem 0 0.5rem 0.5rem;
+  }
+  .desktop-polygon {
+    display: block;
+    width: 50%;
+    background-color: #87CEFA;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 32% 100%);
+    position: relative;
+  }
+  #sun {
+    background-color: gold;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    position: absolute;
+    left: 30%;
+    top: 60%;
+    animation: boopIn 1250ms ease-out, arcLike 2.5s linear 1500ms forwards;
+  }
+  .cloud {
+    background-color: #FFF5EE;
+    width: 7rem;
+    height: 2.5rem;
+    border-radius: 35px;
+    position: absolute;
+    right: 4%;
+    top: 37%;
+    animation: floatLeftRight 20s ease-in-out 2.5s 3;
+  }
+  .cloud div:first-child {
+    background-color: #FFF5EE;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    position: absolute;
+    right: 46%;
+    top: -39%;
+  }
+  .cloud div:last-child {
+    background-color: #FFF5EE;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    position: absolute;
+    right: 8%;
+    top: -65%;
+  }
+} 
