@@ -6,8 +6,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rob's Projects</title>
   <link rel="icon" href="../code-icon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./projects.css">
 </head>
 <body>
-  
+  <nav>
+    <a href="../index.html">Title Page</a>
+    <a href="./about.html">About Me</a>
+    <a href="./contact.html">Contact</a>
+  </nav>
+
+  <div id="title">
+    <h1>Projects</h1>
+  </div>
+
+  <main>
+    <div class="project">
+      <div class="text">
+        <h2>Movie Hunt</h2>
+        <p>Search for movies you might want to see. This application is written with vanilla 
+          <strong>JavaScript</strong>. It fetches from the <strong>TMDB API</strong>.</p>
+        <p>I draw from multiple endpoints revealed in the specs of the API to display the movie 
+            information I would want to see. I group twenty movies at a time so a bunch can be 
+            scrolled over quickly. A trailer can be viewed by means of an iFrame from YouTube.</p>
+        <p>The movie data varies so error handling, data validation and messaging in the DOM is 
+          utilized when needed. Of course it's fully responsive.</p>
+        <div>
+          <a href="https://robertmc5.github.io/MovieHunt/">Live Demo</a>
+          <a href="https://github.com/robertmc5/MovieHunt">GitHub</a>
+        </div>
+      </div>
+      <div class="screenshot">
+        <img src="../media/MovieHunt-Screenshot.png" alt="Movie Hunt App Screenshot">
+      </div>
+    </div>
+
+  </main>
+
 </body>
 </html>

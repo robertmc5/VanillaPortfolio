@@ -92,7 +92,6 @@ body {
 /* Navigation Bar */
 nav {
   padding: 0.5rem 0 2.5rem 0.5rem;
-  text-align: start;
   font-size: 0;
 }
 
@@ -236,6 +235,7 @@ h2 {
 @media only screen and (max-width: 23rem) {
   a {
     font-size: 0.8125rem;
+    margin-right: 0.875rem;
   }
   nav {
     padding: 0.5rem 0 2rem 0.5rem;
@@ -358,10 +358,5 @@ h2 {
   }
   .subject {
     width: 70%;
-  }
-  #resume {
-    width: 48rem;
-    margin: 0 auto;
-    padding: 0.5rem;
   }
 } 
