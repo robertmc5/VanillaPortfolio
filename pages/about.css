@@ -131,7 +131,7 @@ button:active {
 }
 
 .depiction::before {
-  background-color: #B0E0E680;
+  background-color: #87CEFA66;
   clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
   position: absolute;
   content: "";

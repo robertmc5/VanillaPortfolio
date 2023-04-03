@@ -61,7 +61,7 @@ h2 {
 }
 
 #title::before {
-  background-color: #B0E0E680;
+  background-color: #87CEFA80;
   clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
   position: absolute;
   content: "";
