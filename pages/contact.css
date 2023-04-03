@@ -55,8 +55,8 @@ h2 {
 
 #title {
   position: relative;
-  width: 224px;
-  height: 138px;
+  width: 14rem;
+  height: 8.625rem;
   margin: 0 auto;
 }
 
@@ -78,7 +78,7 @@ h2 {
 
 /* Contact Info */
 .contact-info p {
-  font-size: 18px;
+  font-size: 1.125rem;
   padding-block: 0.5rem;
 }
 
@@ -92,16 +92,16 @@ h2 {
   margin: 2.5rem auto;
   display: flex;
   justify-content: center;
-  min-width: 288px;
+  min-width: 18rem;
 }
 
 .icons {
-  flex-basis: 67px;
+  flex-basis: 4.1875rem;
   text-align: center;
 }
 
 .text {
-  flex-basis: 225px;
+  flex-basis: 14.0625rem;
   color: #111111;
 }
 
@@ -112,9 +112,9 @@ h2,
 }
 
 #contact-form {
-  min-width: 288px;
-  max-width: 480px;
-  height: 480px;
+  min-width: 18rem;
+  max-width: 30rem;
+  height: 30rem;
   background-color: #87CEFA;
   margin: 0 auto;
   text-align: center;
